@@ -1,0 +1,114 @@
+Button:hover{
+    -fx-border-style: solid;
+    -fx-border-radius: 80;
+    -fx-border-color: #857b93;
+}
+
+
+
+ToolBar{
+    -fx-background-color: transparent;
+}
+
+GridPane{
+    -fx-background-color: #e1e6f5;
+    -fx-background-size: 100;
+    -fx-background-position: bottom;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height: 600;
+    -fx-pref-width: 1400;
+    -fx-padding: 10;
+
+}
+
+
+
+TextField{
+    -fx-opacity: 70;
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-border-radius: 80;
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-max-width: 200;
+}
+ComboBox{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-max-width: 150;
+    -fx-text-fill: white;
+}
+
+.title{
+    -fx-font-size: 35;
+    -fx-text-fill: black;
+}
+
+.error{
+    -fx-font-size: 15;
+    -fx-text-fill: #7a0005;
+}
+
+#infoLabel{
+    -fx-font-size: 20;
+}
+
+.developerData{
+    -fx-font-size: 19;
+}
+
+
+.tableButton{
+    -fx-font-size: 10;
+    -fx-background-color: #f89b9b;
+    -fx-max-width: 20;
+    -fx-max-height: 20;
+    -fx-text-fill: black;
+    -fx-background-radius: 80;
+}
+
+.table-column{
+    -fx-alignment: CENTER;
+}
+
+TableView:focused{
+    -fx-border-style: none;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: #30a3e5;
+    -fx-text-fill: #91684d;
+
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+     -fx-background-color: transparent;
+
+}
+
+.migration{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 80;
+    -fx-pref-height: 30.0;
+    -fx-pref-width: 100.0;
+    -fx-font-size: 20;
+    -fx-max-width: 250;
+}
+
+.small-button{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 80;
+    -fx-pref-height: 30.0;
+    -fx-pref-width: 100.0;
+    -fx-font-size: 13;
+
+}
+
+.info{
+    -fx-font-size: 20;
+}

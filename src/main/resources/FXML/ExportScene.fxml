@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.miele.javafx.controller.ExportController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+
+    </rowConstraints>
+    <Label styleClass="title" text="Export teams: " GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+    <Label styleClass="title" text="Export Developers: " GridPane.halignment="CENTER" GridPane.rowIndex="1"
+           GridPane.valignment="CENTER"/>
+    <Label styleClass="title" text="Export Sprints: " GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+    <Button fx:id="teamsButton" styleClass="migration" onAction="#exportTeams" text="Export teams" GridPane.columnIndex="2"
+            GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+    <Button fx:id="devsButton" styleClass="migration" onAction="#exportDevs" text="Export developers" GridPane.columnIndex="2"
+            GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
+    <Button fx:id="sprintsButton" styleClass="migration" onAction="#exportSprints" text="Export sprints" GridPane.columnIndex="2"
+            GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+    <Button onAction="#back" text="Back" styleClass="migration" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+            GridPane.valignment="CENTER"/>
+    <ComboBox fx:id="comboTeam" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <ComboBox fx:id="comboDev" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+</GridPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500"
+          prefWidth="1000" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.miele.javafx.controller.SprintControllerV2">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1200" minWidth="10.0" prefWidth="850"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="90.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="326.0"/>
+        <ColumnConstraints/>
+
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="129.0" minHeight="0.0" prefHeight="53.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="267.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="397.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES"/>
+
+    </rowConstraints>
+    <children>
+        <ToolBar prefHeight="40.0" prefWidth="594.0" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <items>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#developer" text="Developer"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#team" text="Team"/>
+
+            </items>
+        </ToolBar>
+        <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="2"
+                 GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <items>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#reset" text="Factory reset"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#importData" text="Import"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#export" text="Export"/>
+
+            </items>
+        </ToolBar>
+        <TableView fx:id="sprintTable" prefHeight="126.0"  GridPane.columnSpan="1"
+                   GridPane.rowIndex="2" GridPane.rowSpan="2">
+            <columns>
+
+            </columns>
+        </TableView>
+        <ComboBox fx:id="teams" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                  GridPane.valignment="TOP"/>
+        <ComboBox fx:id="developerCombo" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                  GridPane.valignment="TOP"/>
+        <TextField fx:id="topics" text="-" promptText="working at another projects" GridPane.columnIndex="2"
+                   GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP"/>
+        <TextField fx:id="availability" promptText="Availability (%)" GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                   GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+        <TextField fx:id="daysOff"  promptText="Number of days" GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                   GridPane.rowIndex="2" GridPane.valignment="BOTTOM"/>
+        <TextField fx:id="spikes" promptText="Number of hours (h)" GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                   GridPane.rowIndex="3" GridPane.valignment="CENTER"/>
+        <Button styleClass="migration" mnemonicParsing="false" onAction="#saveDataForDeveloper" text="Save data "
+                GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4"
+                GridPane.valignment="CENTER"/>
+        <Button styleClass="migration" alignment="CENTER" mnemonicParsing="false" onAction="#chart" text="Chart"
+                GridPane.halignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="4"
+                GridPane.valignment="CENTER"/>
+        <Button styleClass="migration" alignment="CENTER" mnemonicParsing="false" onAction="#saveSprint"
+                text="New sprint" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER"/>
+        <Label fx:id="infoLabel" styleClass="info" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+               GridPane.valignment="BOTTOM"/>
+        <Label styleClass="developerData" text="Topic:" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               GridPane.rowIndex="2" GridPane.valignment="TOP"/>
+        <Label styleClass="developerData" text="Availability:" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+        <Label styleClass="developerData" text="Days Off:" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               GridPane.rowIndex="2" GridPane.valignment="BOTTOM"/>
+        <Label styleClass="developerData" text="Spikes: " GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               GridPane.rowIndex="3" GridPane.valignment="CENTER"/>
+        <Label text="Sprint" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.columnSpan="3"
+               styleClass="title"/>
+    </children>
+</GridPane>

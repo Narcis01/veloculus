@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500"
+          prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.miele.javafx.controller.DeveloperControllerV2">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="130.0" minHeight="0.0" prefHeight="49.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="227.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="455.0" minHeight="10.0" prefHeight="295.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="128.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <items>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#sprint" text="Sprint"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#team" text="Team"/>
+
+            </items>
+        </ToolBar>
+        <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1"
+                 GridPane.columnSpan="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <items>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#reset" text="Factory reset"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#importData" text="Import"/>
+                <Button styleClass="small-button" mnemonicParsing="false" onAction="#export" text="Export"/>
+
+            </items>
+        </ToolBar>
+        <ComboBox fx:id="teams"  GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                  GridPane.valignment="CENTER"/>
+        <TableView fx:id="developerTable" prefHeight="200.0" prefWidth="200.0"  maxWidth="400" GridPane.halignment="CENTER" GridPane.valignment="CENTER"
+                   GridPane.rowIndex="2">
+            <columns>
+
+            </columns>
+        </TableView>
+        <TextField fx:id="developerName" maxWidth="200" prefHeight="19.0" prefWidth="100.0" promptText="Name: "
+                   GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Button mnemonicParsing="false" styleClass="small-button" onAction="#save" text="New developer"
+                GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+        <Button mnemonicParsing="false" styleClass="small-button" onAction="#update" text="Update" GridPane.columnIndex="1"
+                GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+        <Label fx:id="info" styleClass="info" GridPane.halignment="CENTER" GridPane.valignment="TOP"  GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Label text="Developer" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.columnSpan="3" styleClass="title" />
+
+    </children>
+</GridPane>
