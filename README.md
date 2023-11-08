@@ -1,29 +1,4 @@
-# Veloculus
 
-Scholarship small project: 
-https://appme.miele.com/pages/display/BVSWD/Narcis+Nicula+%7C+Veloculus+-+SCRUM+Velocity+Calculator+Tool#expand-CMilestones
-
-# About the project
-
-Velocity is a measure of the amount of work a Team can 
-tackle during a single Sprint and is the key metric in 
-Scrum. Velocity is calculated at the end of the 
-Sprint by totaling the Points for all fully completed 
-tasks. It typically takes an initial few Sprints 
-for the team to figure out a stable Velocity. 
-The past-record experience could be used to get an accurate value for the Velocity of the team which would help the team to estimate the further Velocity for the Sprints and give the stakeholders an expected completion date.
-In order to get the expected Velocity value for upcoming Sprints, the project proposes a streamlined 
-calculator that can be used by all development teams.
-
-# The How
-
-In order to get the expected Velocity value for upcoming Sprints, the project proposes a streamlined calculator that can be used by all development teams.
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
 ## Add your files
 
